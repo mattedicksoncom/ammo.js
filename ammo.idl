@@ -1116,4 +1116,10 @@ interface btSoftBodyHelpers {
 interface btTriangleInfoMap {
   void btTriangleInfoMap();
   void generateInternalEdgeInfo(btBvhTriangleMeshShape trimeshShape);
+  attribute float m_convexEpsilon;
+  attribute float m_planarEpsilon;
+  attribute float m_equalVertexThreshold;
+  attribute float m_edgeDistanceThreshold;
+  attribute float m_maxEdgeAngleThreshold;
+  attribute float m_zeroAreaThreshold;
 };

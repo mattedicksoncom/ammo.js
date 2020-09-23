@@ -49,4 +49,4 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: builds-folder
-        path: ammo.js/builds/
+        path: /home/runner/work/ammo.js/ammo.js/builds

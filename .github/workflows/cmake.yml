@@ -45,7 +45,10 @@ jobs:
 #       working-directory: ${{runner.workspace}}
       shell: bash
       # Execute the build.  You can specify a specific target with "--target <NAME>"
-      run: cmake -B builds -DEXTRA_EXPORTED_RUNTIME_METHODS=["addFunction"]
+      run: cmake -B builds
+    - name: Build Builds
+      shell: bash
+      run: cmake --build builds
     - uses: actions/upload-artifact@v2
       with:
         name: builds-folder

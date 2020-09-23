@@ -45,7 +45,7 @@ jobs:
 #       working-directory: ${{runner.workspace}}
       shell: bash
       # Execute the build.  You can specify a specific target with "--target <NAME>"
-      run: cmake -B builds
+      run: cmake -B builds -DADD_FUNCTION_SUPPORT
     - uses: actions/upload-artifact@v2
       with:
         name: builds-folder

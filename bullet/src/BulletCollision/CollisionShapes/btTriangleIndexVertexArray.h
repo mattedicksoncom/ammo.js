@@ -86,6 +86,9 @@ public:
 
 	//just to be backwards compatible
 	btTriangleIndexVertexArray(int numTriangles,int* triangleIndexBase,int triangleIndexStride,int numVertices,btScalar* vertexBase,int vertexStride);
+	btTriangleIndexVertexArray(int numTriangles,void* triangleIndexBase,int triangleIndexStride,int numVertices,void* vertexBase,int vertexStride) {
+		btTriangleIndexVertexArray(numTriangles, (int *)triangleIndexBase, triangleIndexStride, numVertices, (btScalar *)vertexBase, vertexStride);
+	}
 	
 	void	addIndexedMesh(const btIndexedMesh& mesh, PHY_ScalarType indexType = PHY_INTEGER)
 	{

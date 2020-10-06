@@ -474,6 +474,11 @@ interface btStaticPlaneShape {
 };
 btStaticPlaneShape implements btConcaveShape;
 
+interface btTriangleIndexVertexArray {
+  void btTriangleIndexVertexArray(long numTriangles, VoidPtr triangleIndexBase, long triangleIndexStride, long numVertices, VoidPtr vertexBase, long vertexStride);
+};
+btTriangleIndexVertexArray implements btStridingMeshInterface;
+
 interface btTriangleMeshShape {
 };
 btTriangleMeshShape implements btConcaveShape;

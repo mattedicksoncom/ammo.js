@@ -59,6 +59,7 @@ def build():
   closure = 'closure' in sys.argv
   memoryprofiler = 'memoryprofiler' in sys.argv
   profilingfuncs = 'profilingfuncs' in sys.argv
+  debug = 'debug' in sys.argv
   add_function_support = 'add_func' in sys.argv
 
   args = '-O3 --llvm-lto 1 -s NO_EXIT_RUNTIME=1 -s NO_FILESYSTEM=1 -s EXPORTED_RUNTIME_METHODS=["UTF8ToString"]'
@@ -77,6 +78,9 @@ def build():
     args += ' --memoryprofiler'
   if profilingfuncs:
     args += ' --profiling-funcs'
+  if debug:
+#    os.environ['EMMAKEN_CFLAGS'] = '-DBT_ADDITIONAL_DEBUG -DBT_DEBUG'
+    args += ' --profiling --profiling-funcs -O0 -s ASSERTIONS=2 -s SAFE_HEAP=1 -s STACK_OVERFLOW_CHECK=2 -s DEMANGLE_SUPPORT=1'
 
   emcc_args = args.split(' ')
 

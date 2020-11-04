@@ -5,11 +5,11 @@
 #include "LinearMath/btHashMap.h"
 #include "LinearMath/btVector3.h"
 
-#include "BulletCollision/CollisionShapes/btTriangleInfoMap.h"
+// #include "BulletCollision/CollisionShapes/btTriangleInfoMap.h"
 
 ///The btInternalEdgeUtility helps to avoid or reduce artifacts due to wrong collision normals caused by internal edges.
 ///See also http://code.google.com/p/bullet/issues/detail?id=27
-
+struct  btTriangleInfoMap;
 class btBvhTriangleMeshShape;
 class btCollisionObject;
 struct btCollisionObjectWrapper;

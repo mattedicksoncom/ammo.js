@@ -18,6 +18,7 @@ subject to the following restrictions:
 #define BT_DISCRETE_DYNAMICS_WORLD_H
 
 #include "btDynamicsWorld.h"
+#include "BulletCollision/CollisionShapes/btInternalEdgeUtility.h"
 
 class btDispatcher;
 class btOverlappingPairCache;

@@ -22,7 +22,8 @@ subject to the following restrictions:
 ///#include "BulletCollision/CollisionShapes/btBvhTriangleMeshShape.h"
 class btBvhTriangleMeshShape;
 struct  btTriangleInfoMap;
-#include "BulletCollision/CollisionDispatch/btInternalEdgeUtility.h"
+///#include "BulletCollision/CollisionDispatch/btInternalEdgeUtility.h"
+class btGenerateInternalEdgeInfo;
 
 ///for btTriangleInfo m_flags
 #define TRI_INFO_V0V1_CONVEX 1

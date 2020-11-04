@@ -20,6 +20,7 @@ subject to the following restrictions:
 #include "LinearMath/btHashMap.h"
 #include "LinearMath/btSerializer.h"
 ///#include "BulletCollision/CollisionShapes/btBvhTriangleMeshShape.h"
+class btBvhTriangleMeshShape;
 struct  btTriangleInfoMap;
 #include "BulletCollision/CollisionDispatch/btInternalEdgeUtility.h"
 

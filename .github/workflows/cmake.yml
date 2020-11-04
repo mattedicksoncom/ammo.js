@@ -45,7 +45,7 @@ jobs:
 #       working-directory: ${{runner.workspace}}
       shell: bash
       # Execute the build.  You can specify a specific target with "--target <NAME>"
-      run: cmake -B builds
+      run: cmake -B builds -DCLOSURE=1
     - name: Build Builds
       shell: bash
       run: cmake --build builds

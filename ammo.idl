@@ -262,7 +262,6 @@ interface ClosestConvexResultCallback {
   [Value] attribute btVector3 m_convexToWorld;
   [Value] attribute btVector3 m_hitNormalWorld;
   [Value] attribute btVector3 m_hitPointWorld;
-  [Const] attribute btCollisionObject m_hitCollisionObject;
 };
 ClosestConvexResultCallback implements ConvexResultCallback;
 

@@ -1,3 +1,8 @@
+Changes
+-------
+ * Merged FlorentMasson's fix for internal edge's on trimeshes
+ * Built the latest changes in the main repository allowing use of addFunction()
+
 ammo.js
 =======
 
